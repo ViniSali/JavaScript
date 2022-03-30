@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qual País</title>
+</head>
+<body>
+    <h1>Controle de Fronteira</h1>
+    Seu país é o: <input type="text" name="txtpaís" id="txtpaís">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="res"></div>
+    <script>
+        
+        function verificar() {
+            var país = document.querySelector('input#txtpaís').value.toLowerCase();
+            var res = document.querySelector('div#res')
+            if (país == 'brasil') {
+                res.innerHTML += `<p>Você é brasileiro</p>`
+            } else {
+            res.innerHTML += `<p>Você é estrangeiro</p>`
+            }
+        }
+    </script>
+</body>
+</html>

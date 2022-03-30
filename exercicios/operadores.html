@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores</title>
+</head>
+<body>
+    <script>
+        var a = 5 + 3          // +
+        document.write(`${a}<br>`)  
+        var b = a % 5         // %
+        document.write(`${b}<br>`)
+        var c = 5 * b ** 2    // **
+        document.write(`${c}<br>`)
+        var d = 10 - a / 2    // /
+        document.write(`${d}<br>`)
+        var e = 6 * 2 / d     // *
+        document.write(`${e}<br>`)
+        var f = b % e + 4 / e // % > /
+        document.write(`${f}<br>`)
+    </script>
+</body>
+</html>
+
+<!-- Operadores:
+
+Tipos de operadores que vamos estudar:
+
+Aritméticos
+Atribuição
+relacionais
+lógicos
+ternarios
+
+________________________________________________________________________
+
+
+Operadores Aritméticos:
+ +     // Somar   
+  -    // Subtrair
+  *    // Multiplicação 
+  /    // divisão
+ %   // Resto de uma divisão 
+ **   // Potencia do primeiro numero elevado ao segundo
+
+5 + 3   = 8
+5 - 3    = 2
+5 * 3    = 15
+5 / 3    = 1,6
+5 % 3  =  2
+5 ** 3   = 125
+
+Precedencia dos operadores↓ 
+
+()
+**
+/ * %
++ -
+
+Auto Atribuições:                                                 Forma Simplificada:
+
+var  n = 3                                                              var n = 3
+
+n = n + 4    // ele vai somar ele mesmo a 4                       |     n   +=  4 
+n = n - 5    //ele vai pegar ele mesmo e subtrair 5               |     n   -=  2
+n = n  * 4   //ele vai pegar ele mesmo e multiplicar por 4        |     n   *=  5
+n = n  / 2   //ele vai pegar ele mesmo e dividir por 2            |     n   /=  2
+n = n ** 2  //ele vai pegar ele mesmo e elevar a 2 potência       |     n  **= 2
+n = n %  5 //ele vai pegar ele mesmo, dividir por 5 e dar o resto |     n  %= 5
+
+outra simplificação:
+
+n++     // é a mesma coisa que n = n + 1 ou n += 1
+n—     //é a mesma coisa que n = n - 1 ou n -= 1
+++n    // ele vai somar antes
+—n    // ele vai diminuir antes
+
+
+-->
